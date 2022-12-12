@@ -17,9 +17,7 @@ This is an R Markdown presentation. Markdown is a simple formatting syntax for a
 
 Revert to the command-line and check your 
 git status
-
 You can easily recover from this by a checkout of a branch.
-Or by forcing a branch to your current detached commit
 
 git branch -f branch-name HEAD
 git checkout branch-name
