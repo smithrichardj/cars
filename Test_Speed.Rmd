@@ -1,10 +1,5 @@
 ---
 title: "Test Cars: Speed and Distance"
-  knit: (function(input_file, encoding) {
-    out_dir <- 'docs';
-    rmarkdown::render(input_file,
-      encoding=encoding,
-      output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 author: "Richard Smith and Maria Rodriquez"
 date: "`r Sys.Date()`"
 output: ioslides_presentation
@@ -19,6 +14,15 @@ knitr::opts_chunk$set(echo = FALSE)
 
 This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
+
+Revert to the command-line and check your 
+git status
+You can easily recover from this by a checkout of a branch.
+
+git branch -f branch-name HEAD
+git checkout branch-name
+
+
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
 ## Slide with Bullets
@@ -26,10 +30,13 @@ When you click the **Knit** button a document will be generated that includes bo
 - Bullet 1
 - Bullet 2
 - Bullet 3
+- Bullet 4
+- Bullet 5
 
 ## Slide with R Output
 
 ```{r cars, echo = TRUE}
+dim(cars)
 summary(cars)
 ```
 
