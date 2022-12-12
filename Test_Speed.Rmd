@@ -18,10 +18,12 @@ This is an R Markdown presentation. Markdown is a simple formatting syntax for a
 Revert to the command-line and check your 
 git status
 You can easily recover from this by a checkout of a branch.
+git remote -v # Gives names of remotes 
+Fix the headless branch problem 
+git branch -f branch-name HEAD # names a branch
+git checkout branch-name # switches to a branch 
 
-git branch -f branch-name HEAD
-git checkout branch-name
-
+git push -u origin branch-name
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
