@@ -14,6 +14,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
+
+Revert to the command-line and check your 
+git status
+
+You can easily recover from this by a checkout of a branch.
+Or by forcing a branch to your current detached commit
+
+git branch -f branch-name HEAD
+git checkout branch-name
+
+
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
 ## Slide with Bullets
