@@ -1,5 +1,10 @@
 ---
 title: "Test Cars: Speed and Distance"
+  knit: (function(input_file, encoding) {
+    out_dir <- 'docs';
+    rmarkdown::render(input_file,
+      encoding=encoding,
+      output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 author: "Richard Smith and Maria Rodriquez"
 date: "`r Sys.Date()`"
 output: ioslides_presentation
@@ -7,6 +12,7 @@ output: ioslides_presentation
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
 ```
 
 ## R Markdown
